@@ -18,8 +18,31 @@
               });
 	</script>
        <script src="js/jquery-3.2.1.min.js"></script>
-<script src="js/common.js"></script>
-          </head>
+        <script src="js/common.js"></script>
+		<script type="text/javascript">
+    $(document).ready(function(){
+        
+        $("#back-top").hide();
+ 
+        $(function (){
+            $(window).scroll(function (){
+                if ($(this).scrollTop() > 100){
+                    $('#back-top').fadeIn();
+                } else{
+                    $('#back-top').fadeOut();
+                }
+            });
+         
+            $('#back-top a').click(function (){
+                $('body,html').animate({
+                    scrollTop:0
+                }, 800);
+                return false;
+            });
+        });
+    });
+</script>
+    </head>
   <body>
     <div id="wrapper">
               <div id="header">
@@ -155,6 +178,8 @@
                              <span><p>Копіювання матеріалів без згоди автора заборонено </p></span>
             </div>
   </div>
-  <div id="scroller" class="b-top" style="display: none;"><span class="b-top-but">вверх</span></div>
+ <p id="back-top">
+    <a href="#top"><span ><img style="width:70%; height:70%;margin-top:14%; border-radius:75px;"src="image/button.png" alt="???"></span></a>
+</p>
  </body>
 </html>
