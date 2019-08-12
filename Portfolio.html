@@ -15,37 +15,26 @@
        
        <script src="js/jquery-3.2.1.min.js"></script>
         <script src="js/common.js"></script>
-	<script type="text/javascript">
-    $(document).ready(function(){
-        
-        $("#back-top").hide();
-
-        
-        $(function (){
-            $(window).scroll(function (){
-                if ($(this).scrollTop() > 100){
-                    $('#back-top').fadeIn();
-                } else{
-                    $('#back-top').fadeOut();
-                }
-            });
-
-           
-            $('#back-top a').click(function (){
-                $('body,html').animate({
-                    scrollTop:0
-                }, 800);
-                return false;
-            });
-        });
-    });
-</script>	
+	<script>
+                  function ScrollUp(){
+                  var t,s;
+                  s=document.body.scrollTop||window.pageYOffset;
+                  t=setInterval(function(){if(s>0)window.scroll(0,s-=5);else clearInterval(t)},5);
+                  }
+        </script>
 
     </head>
   <body id="top">
-	<p id="back-top">
-                   <a href="#top"><span ><img style="width:70%; height:70%;margin-top:14%; border-radius:75px;"src="image/button.png" alt="???"></span></a>
-      </p>
+	<a href="#top"
+   onclick="ScrollUp();return!1;"
+   style="display:block;position:fixed;
+        bottom:30px;right:30px;
+        width:64px;height:32px;padding:12px 10px 2px;font-size:16px;
+        opacity:0.7; /*добавим прозрачности*/
+        background:#ddd;
+        -webkit-border-radius:15px;
+        -moz-border-radius:15px;
+        border-radius:15px">Вверх</a>
     <div id="wrapper">
               <div id="header">
                           <div id="logo">
