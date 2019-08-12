@@ -17,25 +17,7 @@
 
     </head>
   <body id="top">
-	   <script src="js/jquery-3.2.1.min.js"></script>
-        <script src="js/common.js"></script>
-	<script>
-                  function ScrollUp(){
-                  var t,s;
-                  s=document.body.scrollTop||window.pageYOffset;
-                  t=setInterval(function(){if(s>0)window.scroll(0,s-=5);else clearInterval(t)},5);
-                  }
-        </script>
-	<a href="#top"
-   onclick="ScrollUp();return!1;"
-   style="display:block;position:fixed;
-        bottom:30px;right:30px;
-        width:64px;height:32px;padding:12px 10px 2px;font-size:16px;
-        opacity:0.7; /*добавим прозрачности*/
-        background:#ddd;
-        -webkit-border-radius:15px;
-        -moz-border-radius:15px;
-        border-radius:15px">Вверх</a>
+	   
     <div id="wrapper">
               <div id="header">
                           <div id="logo">
@@ -67,6 +49,25 @@
                          </div>
                           
               </div>
+	    <script src="js/jquery-3.2.1.min.js"></script>
+        <script src="js/common.js"></script>
+	<script>
+                  function ScrollUp(){
+                  var t,s;
+                  s=document.body.scrollTop||window.pageYOffset;
+                  t=setInterval(function(){if(s>0)window.scroll(0,s-=5);else clearInterval(t)},5);
+                  }
+        </script>
+	<a href="#top"
+   onclick="ScrollUp();return!1;"
+   style="display:block;position:fixed;
+        bottom:30px;right:30px;
+        width:64px;height:32px;padding:12px 10px 2px;font-size:16px;
+        opacity:0.7; /*добавим прозрачности*/
+        background:#ddd;
+        -webkit-border-radius:15px;
+        -moz-border-radius:15px;
+        border-radius:15px">Вверх</a>
               <div id="about_myself">
                          <hr/>
                          <p style="margin-top:1em;"><span>Портфоліо</span></p>
