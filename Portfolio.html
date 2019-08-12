@@ -13,7 +13,11 @@
 	<![endif]-->
         <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
        
-       <script src="js/jquery-3.2.1.min.js"></script>
+      
+
+    </head>
+  <body id="top">
+	   <script src="js/jquery-3.2.1.min.js"></script>
         <script src="js/common.js"></script>
 	<script>
                   function ScrollUp(){
@@ -22,9 +26,6 @@
                   t=setInterval(function(){if(s>0)window.scroll(0,s-=5);else clearInterval(t)},5);
                   }
         </script>
-
-    </head>
-  <body id="top">
 	<a href="#top"
    onclick="ScrollUp();return!1;"
    style="display:block;position:fixed;
