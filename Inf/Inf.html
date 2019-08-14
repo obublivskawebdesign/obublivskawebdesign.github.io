@@ -12,23 +12,9 @@
 	<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
 	<![endif]-->
         <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
-        <script type="text/javascript">
-         $(function() { 
-             $(window).scroll(function() {
-                 if($(this).scrollTop() != 0) {
-                       $('#toTop').fadeIn();
-                  } else {
-                       $('#toTop').fadeOut();
-                  }
-             });
-             $('#toTop').click(function() {
-                  $('body,html').animate({scrollTop:0},800);
-             });
-         });
-       </script>
-       <script src="js/jquery-3.2.1.min.js"></script>
-<script src="js/common.js"></script>
-          </head>
+        <script src="js/jquery-3.2.1.min.js"></script>
+        <script src="js/common.js"></script>
+  </head>
   <body>
     <div id="wrapper">
               <div id="header">
@@ -61,6 +47,24 @@
                          </div>
                           
               </div>
+	      <script>
+                  function ScrollUp(){
+                  var t,s;
+                  s=document.body.scrollTop||window.pageYOffset;
+                  t=setInterval(function(){if(s>0)window.scroll(0,s-=5);else clearInterval(t)},5);
+                  }
+        </script>
+	  <a href="#top" onclick="ScrollUp();return!1;"
+	         style="display:block;position:fixed;
+                 bottom:30px;right:30px;
+                 width:15%;height:10%; font-size:16px;
+                 opacity:0;
+                 background:#ddd;
+                 -webkit-border-radius:15px;
+                 -moz-border-radius:15px;
+                 border-radius:15px">
+	         <img style="width:100%; height:100%; margin: 0 auto; border-radius:75px;"src="image/button.png" alt="???"></a>
+          
               <div id="about_myself">
                          <hr/>
                          <p style="margin-top:1em;"><span>Портфоліо</span></p>
@@ -89,8 +93,6 @@
                              <span><p>Копіювання матеріалів без згоди заборонено </p></span>
             </div>
   </div>
-  <div id = "toTop" > 
-           <img id="im2" src="image/button.png" alt="???"> 
-  </div >
+  
  </body>
 </html>
