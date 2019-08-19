@@ -88,7 +88,10 @@
       .rows h5 {
         font-size: 75%; } }
 
-
+.miniimport{
+   width=20em;
+   height=20em;
+}
 
 #header {
   background: #014101;
