@@ -71,6 +71,10 @@
     .rows {
       width: 90%;
       margin-left: 7%; } }
+  @media (max-width: 980px) {
+    .rows img{
+      width:30em;
+      height:30em;   } }
   @media (max-width: 506px) {
     .rows {
       height: auto;
@@ -88,9 +92,8 @@
       .rows h5 {
         font-size: 75%; } }
 
-.miniimport{
-   width=20em;
-   height=20em;
+.miniimport img{
+   
 }
 
 #header {
