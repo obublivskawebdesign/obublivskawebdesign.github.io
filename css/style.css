@@ -42,14 +42,12 @@
 
 .rows {
   float: left;
- 
-  width: 29%;
+   width: 29%;
   height: auto;
   background-color: white;
   margin-top: 0.625em;
-  overflow: hidden
+  overflow: hidden;
   margin-left: 3%;
- 
   text-align: center; }
   .rows img {
     -moz-transition: all 1s ease-out;
@@ -60,13 +58,10 @@
     width: 18em;
     height: 18em; }
   .rows img:hover{
-      
-      
-      border: 0.2em gray solid; 
+     border: 0.2em gray solid; 
      -webkit-transform: scale(1.2);
      -moz-transform: scale(1.1);
      -o-transform: scale(1.1);}
- 
   .rows h3 {
     color: black;
     margin: 1.56em auto 0.3125em; }
