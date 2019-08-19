@@ -47,6 +47,7 @@
   height: auto;
   background-color: white;
   margin-top: 0.625em;
+  position: absolute;
   margin-left: 3%;
  
   text-align: center; }
