@@ -115,29 +115,7 @@
     #header {
       height: auto; } }
 
-#subheader {
-  background: #014101;;
-  float: left;
-  width: 70%;
-  height: auto;
-  margin-left: 7%;
-  margin-bottom:3%;
-  margin-top: 0.625em;
-  text-align: center;
-  border: 0em white solid; }
-  @media (max-width: 720px) {
-    #subheader {
-      margin-left: 4%;
-       } }
-   @media (max-width: 620px) {
-    #subheader {
-      margin-left: 2%;
-       } }
-    @media (max-width: 560px) {
-    #subheader {
-      width: 95%;
-      margin-left: 2%;
-       } }
+
 
 
 #logo{
@@ -158,22 +136,6 @@
   @media (max-width: 500px) {
      {
       } }
-
-.title{ 
-  background: #014101;
-  float: left;
-  width: 30%;
-  height: 3em;
-  margin-top: 0.625em;
-  margin-left: 2%;
-  color: white;
-  text-align: center;
-        }
-  
-  @media (max-width: 600px) {
-    .title {
-      width:90%;
-      height: 3em; } }
 
 .image {
   display: block;
@@ -385,20 +347,22 @@
  
 #bar > li {
   float: left;
-  margin-left: 40%;
+  width:100%;
+  
+  
   position: relative;
 }
  @media (max-width: 680px) {
     #bar > li {
-      margin-left: 30%;
+      
      } }
  @media (max-width: 600px) {
     #bar > li {
-      margin-left:33%;
+      
      } }
  @media (max-width: 560px) {
     #bar > li {
-      margin-left: 57%;
+     
      } }
  
 #bar > li > a {
@@ -482,6 +446,43 @@
   left: auto;
   right: 24px;
 }
+#subheader {
+  background: #014101;;
+  float: left;
+  width: 70%;
+  height: auto;
+  margin-left: 7%;
+  margin-bottom:3%;
+  margin-top: 0.625em;
+  text-align: center;
+  border: 0em white solid; }
+  @media (max-width: 720px) {
+    #subheader {
+      margin-left: 4%;
+       } }
+   @media (max-width: 620px) {
+    #subheader {
+      margin-left: 2%;
+       } }
+    @media (max-width: 560px) {
+    #subheader {
+      width: 95%;
+      margin-left: 2%;
+       } }
+.title{ 
+  background: #014101;
+  float: left;
+  width: 30%;
+  height: 3em;
+  margin-top: 0.625em;
+  margin-left: 2%;
+  color: white;
+  text-align: center;
+        }
+  @media (max-width: 600px) {
+    .title {
+      width:90%;
+      height: 3em; } }
 /*Back to top button */
     #back-top{
         position:fixed;
