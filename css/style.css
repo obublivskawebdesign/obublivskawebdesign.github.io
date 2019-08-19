@@ -47,7 +47,7 @@
   height: auto;
   background-color: white;
   margin-top: 0.625em;
-  position: absolute;
+  overflow: hidden
   margin-left: 3%;
  
   text-align: center; }
